@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Calculate grade based on average, you can customize this part as per your grading system
         String grade;
-        f(sub1<35||sub2<35||sub3<35||sub4<35||sub5<35||sub6<35){
+        if(sub1<35||sub2<35||sub3<35||sub4<35||sub5<35||sub6<35){
                 grade="F";
         }
         else{
