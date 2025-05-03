@@ -50,19 +50,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void calculateGrade() {
-        int grade1 = Double.parseDouble(grade1EditText.getText().toString());
-        int grade2 = Double.parseDouble(grade2EditText.getText().toString());
-        int grade3 = Double.parseDouble(grade3EditText.getText().toString());
-        int grade4 = Double.parseDouble(grade4EditText.getText().toString());
-        int grade5 = Double.parseDouble(grade5EditText.getText().toString());
-        int grade6 = Double.parseDouble(grade6EditText.getText().toString());
+        int grade1 = Integer.parseInt(grade1EditText.getText().toString());
+        int grade2 = Integer.parseInt(grade2EditText.getText().toString());
+        int grade3 = Integer.parseInt(grade3EditText.getText().toString());
+        int grade4 = Integer.parseInt(grade4EditText.getText().toString());
+        int grade5 = Integer.parseInt(grade5EditText.getText().toString());
+        int grade6 = Integer.parseInt(grade6EditText.getText().toString());
 
         int total = grade1 + grade2 + grade3 + grade4 + grade5 + grade6;
         int average = total / 6;
 
         // Calculate grade based on average, you can customize this part as per your grading system
         String grade;
-        if(sub1<35||sub2<35||sub3<35||sub4<35||sub5<35||sub6<35){
+        if(grade1<35||grade2<35||grade3<35||grade4<35||grade5<35||grade6<35){
                 grade="F";
         }
         else{
